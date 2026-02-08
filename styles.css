@@ -39,11 +39,38 @@ p {
     text-align: center;
 }
 
-
-
 .card {
     padding: 5px;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+}
+
+.timeline {
+    border: 1px solid hsla(0, 0%, 0%, 0.2);
+    border-left: 2px solid hsl(192, 100%, 50%);
+    position: relative;
+    list-style: none;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline .timeline-item {
+    position: relative;
+}
+
+.timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .timeline-item:after {
+    background-color: hsl(192, 100%, 50%);;
+    left: -26px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
 }
