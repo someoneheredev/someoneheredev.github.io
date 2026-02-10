@@ -41,26 +41,62 @@ p {
     font-size: 16px;
 }
 
-#introduction {
-    color: #666;
-    font-size: 13px;
+
+.hero {
+    background: linear-gradient(180deg, #0476ac 0%, #0476ac 55%, #f4f4f4 55%);
+    padding-bottom: 120px;
 }
 
-#header {
-    background-color: #0476ac;
-}
-
-#title {
-    color: white;
-    padding: 10px;
-    font-size: xx-large;
-
-}
-
-#tagline {
-    color: #fafdff;
-    font-weight: bolder;
+.hero-card {
+    position: relative;
+    background: white;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 80px 30px 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.18);
+}
+
+.hero-avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -140px);
+    border: 6px solid white;
+}
+
+.hero-name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.hero-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    background: #f4f4f4;
+    border-radius: 999px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.hero-meta img {
+    width: 32px;
+    height: auto;
+    border-radius: 4px;
 }
 
 .card {
