@@ -43,8 +43,10 @@ p {
 
 
 .hero {
-    background: linear-gradient(180deg, #0476ac 0%, #0476ac 55%, #f4f4f4 55%);
+    background: url("images/misc/banner.png") center/cover no-repeat;
+    padding-top: 10px;
     padding-bottom: 120px;
+    position: relative;
 }
 
 .hero-card {
