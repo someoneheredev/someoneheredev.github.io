@@ -1,3 +1,2 @@
-# Simple Portfolio
-
-A minimal portfolio that gets the point across without looking ugly.  
+# Playful, vibrant portfolio
+Hi! Welcome to my portfolio, this has been updated from the simpler design to a more vibrant, colourful, and fun aesthetic!
