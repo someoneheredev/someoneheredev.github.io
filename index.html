@@ -2,488 +2,127 @@
 <html lang="en">
 
 <head>
-    <title>someonehere's portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="someonehere's personal site for projects, Roblox development, and web learning.">
+    <title>someonehere.me | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.webp">
+    <link rel="icon" type="image/webp" href="portfolio/images/favicon.webp">
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <section class="hero">
-        <span class="hero-shape hero-shape--blob1"></span>
-        <span class="hero-shape hero-shape--blob2"></span>
-        <span class="hero-shape hero-shape--ring"></span>
-        <span class="hero-shape hero-shape--triangle"></span>
-        <span class="hero-shape hero-shape--star"></span>
+<body class="site-home">
+    <header class="home-shell home-nav">
+        <a class="home-brand" href="index.html" aria-label="someonehere home">
+            <span class="home-brand-mark"><i class="fa-solid fa-code"></i></span>
+            <span>someonehere.me</span>
+        </a>
 
-        <div class="hero-card">
-            <img src="images/misc/pfp.png" class="hero-avatar">
+        <nav class="home-nav-links" aria-label="Main navigation">
+            <a class="home-nav-link" href="portfolio/index.html">Portfolio</a>
+            <a class="home-nav-link" href="warfront.html">WARFRONT</a>
+            <a class="home-nav-link" href="quick-info.html">About</a>
+        </nav>
+    </header>
 
-            <h2 class="hero-name">someonehere.</h2>
-
-            <p class="hero-tagline">Building <span>Roblox experiences</span> &amp; learning the web</p>
-
-            <div class="hero-meta">
-                <img src="images/misc/australia.webp" alt="Australia Flag" class="hero-flag">
-                <span>15 y/o Roblox Game Developer</span>
-            </div>
-
-            <div class="hero-pills">
-                <span><i class="fa-solid fa-code"></i> Luau</span>
-                <span><i class="fa-solid fa-bolt"></i> 4+ Years</span>
-                <span><i class="fa-solid fa-rocket"></i> Open to Work</span>
-                <span><i class="fa-solid fa-earth-oceania"></i> Australia</span>
-            </div>
-        </div>
-    </section>
-    <div class="container">
-        <div class="row">
-            <hr>
-            <section class="section py-1" id="about-section">
-                <h2 class="titleh2" id="blahblahblah"><i class="fa-solid fa-circle-info"></i> About Me</h2>
-
-                <p id="introduction">
-                    helloo, I'm <strong>someonehere</strong> a 15 y/o Roblox game programmer based in
-                    <i class="fa-solid fa-earth-oceania"></i> <strong>Australia</strong>.
-                    I've been scripting in <em>Luau</em> for over four years, building everything from inventory systems
-                    to UI to full
-                    gameplay loops. I'm currently learning <strong>web development</strong> (you're looking at it 😉)
-                    and
-                    actively looking for new <strong>Roblox projects, contracts, or team roles</strong> to jump into.
+    <main class="home-shell">
+        <section class="home-hero" aria-labelledby="home-title">
+            <div class="home-hero-panel">
+                <p class="home-kicker">Roblox developer &bull; web learner &bull; Australia</p>
+                <h1 class="home-title" id="home-title">Hey, I'm <span>someonehere.</span></h1>
+                <p class="home-intro">
+                    I build Roblox systems, gameplay loops, UI, and weird little web things while I keep learning.
+                    This site is becoming the main place for everything about me: projects, experiments, contact links,
+                    and whatever I end up making next.
                 </p>
 
-                <div class="about-stats">
-                    <div class="about-stat">
-                        <span class="about-stat-num">4<span class="about-stat-plus">+</span></span>
-                        <span class="about-stat-label">Years Scripting</span>
-                    </div>
-                    <div class="about-stat">
-                        <span class="about-stat-num">2</span>
-                        <span class="about-stat-label">Studios Worked With</span>
-                    </div>
-                    <div class="about-stat">
-                        <span class="about-stat-num">10<span class="about-stat-plus">+</span></span>
-                        <span class="about-stat-label">Systems Shipped</span>
-                    </div>
-                </div>
-
-                <div class="about-current">
-                    <div class="about-current-pulse"></div>
-                    <div class="about-current-text">
-                        <span class="about-current-label">Currently working on</span>
-                        <span class="about-current-value">Upcoming projects at <strong>Coastline Group</strong> &amp;
-                            freelance contracts</span>
-                    </div>
-                </div>
-
-                <div class="about-contact">
-                    <a href="#" class="about-contact-btn about-contact-btn--primary">
-                        <i class="fa-brands fa-discord"></i>
-                        <span>'someonehere.' on Discord</span>
+                <div class="home-actions" aria-label="Featured links">
+                    <a class="home-button home-button--primary" href="portfolio/index.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        View portfolio
                     </a>
-                    <a href="https://www.roblox.com/users/350724950/profile" class="about-contact-btn"
-                        aria-label="Roblox profile">
+                    <a class="home-button" href="warfront.html">
+                        <i class="fa-solid fa-flask-vial"></i>
+                        Projects
+                    </a>
+                    <a class="home-button" href="https://www.roblox.com/users/350724950/profile">
                         <i class="fa-solid fa-cube"></i>
+                        Roblox profile
                     </a>
                 </div>
-            </section>
-            <hr>
-            <section class="py-1 experience-section">
-                <h2 class="titleh2" id="roblox"><i class="fa-solid fa-briefcase"></i> Experience</h2>
-                <div class="exp-grid">
-
-                    <div class="exp-card">
-                        <div class="exp-card-header">
-                            <div class="exp-icon-wrap">
-                                <i class="fa-solid fa-snowflake"></i>
-                            </div>
-                            <div class="exp-header-text">
-                                <h4 class="exp-company">Tundra Softworks</h4>
-                                <span class="exp-role">Scripter</span>
-                            </div>
-                            <span class="exp-badge">2022 – 2023</span>
-                        </div>
-                        <p class="exp-desc">
-                            Worked on <strong>Phantasma</strong>, a tower defence game. Responsible for refining
-                            gameplay mechanics, bug fixes, and implementing new features — involving OOP, large
-                            codebases, and team collaboration.
-                        </p>
-                        <div class="exp-tags">
-                            <span>OOP</span><span>Bug Fixes</span><span>Team Collab</span>
-                        </div>
-                    </div>
-
-                    <div class="exp-card exp-card--current">
-                        <div class="exp-card-header">
-                            <div class="exp-icon-wrap">
-                                <i class="fa-solid fa-file-contract"></i>
-                            </div>
-                            <div class="exp-header-text">
-                                <h4 class="exp-company">Independent Contract Work</h4>
-                                <span class="exp-role">Freelance Scripter</span>
-                            </div>
-                            <span class="exp-badge exp-badge--current"><i class="fa-solid fa-circle"
-                                    style="font-size:7px;"></i> Now</span>
-                        </div>
-                        <p class="exp-desc">
-                            Contract work for various clients — bug fixes, code optimization, and feature implementation
-                            across a wide variety of systems.
-                        </p>
-                        <div class="exp-tags">
-                            <span>Inventory Systems</span><span>UI Programming</span><span>Crate
-                                Systems</span><span>Emote Wheels</span><span>Round Systems</span>
-                        </div>
-                    </div>
-
-                    <div class="exp-card">
-                        <div class="exp-card-header">
-                            <div class="exp-icon-wrap">
-                                <i class="fa-solid fa-shield-halved"></i>
-                            </div>
-                            <div class="exp-header-text">
-                                <h4 class="exp-company">Benji's US Army</h4>
-                                <span class="exp-role">Scripter</span>
-                            </div>
-                            <span class="exp-badge">2025</span>
-                        </div>
-                        <p class="exp-desc">
-                            Worked on a US Military roleplay game — built UI Systems and Player Interaction systems
-                            including locker mechanics.
-                        </p>
-                        <div class="exp-tags">
-                            <span>UI Systems</span><span>Player Interaction</span><span>Roleplay</span>
-                        </div>
-                    </div>
-
-                    <div class="exp-card exp-card--current">
-                        <div class="exp-card-header">
-                            <div class="exp-icon-wrap">
-                                <img src="images/icons/coastlinegroup.png" alt="Coastline Group Logo"
-                                    style="width:22px;height:22px;object-fit:contain;">
-                            </div>
-                            <div class="exp-header-text">
-                                <h4 class="exp-company">Coastline Group</h4>
-                                <span class="exp-role">Scripter</span>
-                            </div>
-                            <span class="exp-badge exp-badge--current"><i class="fa-solid fa-circle"
-                                    style="font-size:7px;"></i> Now</span>
-                        </div>
-                        <p class="exp-desc">
-                            Currently working as a Scripter on upcoming projects for Coastline Group.
-                        </p>
-                        <div class="exp-tags">
-                            <span>Active</span><span>Upcoming Projects</span>
-                        </div>
-                    </div>
-
-            </section>
-            <hr>
-
-            <section class="py-1 projects-section">
-                <h2 class="titleh2" id="coolstuff"><i class="fa-solid fa-flask-vial"></i> Projects & Demos</h2>
-
-                <div class="warfront-banner">
-                    <div class="warfront-banner-bg">
-                        <img src="images/projects/WARFRONT1280x720.png" alt="WARFRONT" class="warfront-banner-img">
-                        <div class="warfront-banner-overlay"></div>
-                    </div>
-                    <div class="warfront-banner-content">
-                        <div class="warfront-banner-left">
-                            <span class="warfront-banner-label">In Development</span>
-                            <h3 class="warfront-banner-title">WARFRONT</h3>
-                            <p class="warfront-banner-desc">
-                                A tower defense game on Roblox where you summon legendary commanders
-                                from every era of warfare. WW1 through modern day, and battle
-                                through historical campaigns.
-                            </p>
-                            <div class="warfront-banner-tags">
-                                <span>Tower Defence</span>
-                                <span>Large Project</span>
-                                <span>Historical</span>
-                                <span>Game Design</span>
-                            </div>
-                        </div>
-                        <div class="warfront-banner-right">
-                            <span class="warfront-banner-tagline">EVERY ERA. &nbsp; EVERY LEGEND.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mypcshop-banner">
-                    <div class="mypcshop-banner-bg">
-                        <img src="images/projects/mypcshop3.png" alt="My PC Shop" class="mypcshop-banner-img">
-                        <div class="mypcshop-banner-overlay"></div>
-                    </div>
-                    <div class="mypcshop-banner-content">
-                        <div class="mypcshop-banner-left">
-                            <span class="mypcshop-banner-label">Solo Project</span>
-                            <h3 class="mypcshop-banner-title">My PC Shop!</h3>
-                            <p class="mypcshop-banner-desc">
-                                Run your own PC store! Build your dream shop, control prices, manage stock, and grow
-                                your tech empire from the ground up.
-                            </p>
-                            <div class="mypcshop-banner-tags">
-                                <span>AI Customers</span>
-                                <span>Store Design</span>
-                                <span>Upgrade System</span>
-                                <span>AI Workers</span>
-                            </div>
-                        </div>
-                        <div class="mypcshop-banner-right">
-                            <span class="mypcshop-banner-tagline">YOUR SHOP. &nbsp; YOUR RULES.</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="proj-grid">
-
-                    <div class="proj-card">
-                        <div class="proj-card-header">
-                            <div class="proj-icon-wrap">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </div>
-                            <div class="proj-header-text">
-                                <h4 class="proj-title">Advanced Outfit System</h4>
-                                <span class="proj-type">Client Work</span>
-                            </div>
-                            <span class="proj-badge">Demo</span>
-                        </div>
-                        <p class="proj-desc">
-                            A flexible outfit system where players can buy pre-made outfits or create their own — with
-                            bulk purchases, owned-item checks, and full customization.
-                        </p>
-                        <div class="proj-tags">
-                            <span>UI Programming</span><span>Bulk Purchase</span><span>Customization</span>
-                        </div>
-                        <div class="proj-media">
-                            <video src="images/projects/outfits (1).mp4" class="proj-media-content" controls></video>
-                        </div>
-                    </div>
-
-                    <div class="proj-card">
-                        <div class="proj-card-header">
-                            <div class="proj-icon-wrap">
-                                <i class="fa-solid fa-box-open"></i>
-                            </div>
-                            <div class="proj-header-text">
-                                <h4 class="proj-title">Locker System</h4>
-                                <span class="proj-type">Client Work</span>
-                            </div>
-                            <span class="proj-badge">Demo</span>
-                        </div>
-                        <p class="proj-desc">
-                            A team-based locker system for a roleplay game. Players can equip built-in Roblox
-                            accessories or custom models, keeping team gear organized and easy to access.
-                        </p>
-                        <div class="proj-tags">
-                            <span>Player Interaction</span><span>Team Systems</span><span>Accessories</span>
-                        </div>
-                        <div class="proj-media">
-                            <video src="images/projects/lockersystem (1).mp4" class="proj-media-content"
-                                controls></video>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </div>
-        <hr>
-        <section class="py-1 skills-section">
-            <h2 class="titleh2" id="essential"><i class="fa-solid fa-clipboard-list"></i> Skills</h2>
-            <div class="info-grid info-grid--skills">
-                <div class="info-card">
-                    <div class="info-card-header">
-                        <div class="info-icon-wrap">
-                            <i class="fa-solid fa-diagram-project"></i>
-                        </div>
-                        <div class="info-header-text">
-                            <h4 class="info-title">Object Oriented Programming</h4>
-                            <span class="info-subtitle">Core system design</span>
-                        </div>
-                        <span class="info-badge">Advanced</span>
-                    </div>
-                    <p class="info-desc">Building modular, reusable systems that stay readable even as projects get
-                        larger.</p>
-                </div>
-
-                <div class="info-card">
-                    <div class="info-card-header">
-                        <div class="info-icon-wrap">
-                            <i class="fa-solid fa-chart-area"></i>
-                        </div>
-                        <div class="info-header-text">
-                            <h4 class="info-title">Performance & Optimization</h4>
-                            <span class="info-subtitle">Smooth gameplay focus</span>
-                        </div>
-                        <span class="info-badge">Strong</span>
-                    </div>
-                    <p class="info-desc">Trimming unnecessary work, improving responsiveness, and keeping systems
-                        efficient under load.</p>
-                </div>
-
-                <div class="info-card">
-                    <div class="info-card-header">
-                        <div class="info-icon-wrap">
-                            <i class="fa-solid fa-database"></i>
-                        </div>
-                        <div class="info-header-text">
-                            <h4 class="info-title">Data Handling</h4>
-                            <span class="info-subtitle">State and persistence</span>
-                        </div>
-                        <span class="info-badge">Reliable</span>
-                    </div>
-                    <p class="info-desc">Managing saved data, player state, and structured data flow cleanly across
-                        systems.</p>
-                </div>
-
-                <div class="info-card">
-                    <div class="info-card-header">
-                        <div class="info-icon-wrap">
-                            <i class="fa-solid fa-folder-tree"></i>
-                        </div>
-                        <div class="info-header-text">
-                            <h4 class="info-title">Professional Code Structure</h4>
-                            <span class="info-subtitle">Maintainable layouts</span>
-                        </div>
-                        <span class="info-badge">Clean</span>
-                    </div>
-                    <p class="info-desc">Writing code that is easy to navigate, debug, and extend later without turning
-                        messy.</p>
-                </div>
             </div>
+
+            <aside class="home-status-panel" aria-label="Quick profile">
+                <div class="home-portrait-frame">
+                    <img class="home-portrait" src="portfolio/images/misc/pfp.png" alt="someonehere profile avatar">
+                </div>
+
+                <div>
+                    <p class="home-section-label">Currently</p>
+                    <ul class="home-mini-list">
+                        <li><i class="fa-solid fa-gamepad"></i> Building Roblox experiences</li>
+                        <li><i class="fa-solid fa-laptop-code"></i> Learning HTML, CSS, and web design</li>
+                        <li><i class="fa-solid fa-bolt"></i> Open to Roblox projects and contract work</li>
+                    </ul>
+                </div>
+            </aside>
         </section>
 
-        <hr>
+        <section class="home-link-grid" aria-label="Pages and projects">
+            <a class="home-tile" href="portfolio/index.html">
+                <span class="home-tile-icon"><i class="fa-solid fa-id-card"></i></span>
+                <span class="home-tile-tag">Main page</span>
+                <h2>Portfolio</h2>
+                <p>Experience, skills, tools, Roblox systems, and the more formal developer snapshot.</p>
+                <span class="home-tile-action">Open portfolio <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
 
-        <section class="py-1 languages-section">
-            <h2 class="titleh2" id="learning"><i class="fa-solid fa-list"></i> Languages</h2>
-            <div class="info-grid info-grid--languages">
-                <div class="info-card language-card">
-                    <div class="info-card-header">
-                        <div class="language-mark">
-                            <img src="images/luau.png" alt="Luau Logo">
-                        </div>
-                        <div class="info-header-text">
-                            <h4 class="info-title">Luau</h4>
-                            <span class="info-subtitle">Roblox scripting language</span>
-                        </div>
-                        <span class="info-badge info-badge--experienced"><i class="fa-solid fa-trophy"
-                                style="font-size:9px;"></i> 4+ Years</span>
-                    </div>
-                    <p class="info-desc">My main language for building Roblox systems, gameplay logic, UI behaviour, and
-                        toolchains.</p>
-                    <div class="info-tags">
-                        <span>Roblox Systems</span>
-                        <span>Gameplay Logic</span>
-                        <span>UI Behaviour</span>
-                    </div>
-                </div>
+            <a class="home-tile home-tile--media home-tile--accent-red" href="warfront.html">
+                <span class="home-tile-media">
+                    <img src="portfolio/images/projects/WARFRONT1280x720.png" alt="WARFRONT project banner">
+                </span>
+                <span class="home-tile-body">
+                    <span class="home-tile-tag">In development</span>
+                    <h2>WARFRONT</h2>
+                    <p>A Roblox tower defense project about legendary commanders across eras of warfare.</p>
+                    <span class="home-tile-action">View project <i class="fa-solid fa-arrow-right"></i></span>
+                </span>
+            </a>
 
-                <div class="info-card language-card">
-                    <div class="info-card-header">
-                        <div class="language-mark">
-                            <img src="images/html.png" alt="HTML Logo">
-                        </div>
-                        <div class="info-header-text">
-                            <h4 class="info-title">HTML</h4>
-                            <span class="info-subtitle">Static structure</span>
-                        </div>
-                        <span class="info-badge info-badge--growing"><i class="fa-solid fa-leaf"
-                                style="font-size:9px;"></i> Growing</span>
-                    </div>
-                    <p class="info-desc">Used for building clean page structure and laying out responsive web
-                        interfaces.</p>
-                    <div class="info-tags">
-                        <span>Responsive Layout</span>
-                        <span>Bootstrap</span>
-                        <span>Semantic Markup</span>
-                    </div>
-                </div>
+            <a class="home-tile home-tile--media home-tile--accent-blue" href="my-pc-shop.html">
+                <span class="home-tile-media">
+                    <img src="portfolio/images/projects/mypcshop3.png" alt="My PC Shop project screenshot">
+                </span>
+                <span class="home-tile-body">
+                    <span class="home-tile-tag">Solo project</span>
+                    <h2>My PC Shop!</h2>
+                    <p>A shop-management Roblox idea with pricing, stock, upgrades, and customer systems.</p>
+                    <span class="home-tile-action">View project <i class="fa-solid fa-arrow-right"></i></span>
+                </span>
+            </a>
 
-                <div class="info-card language-card">
-                    <div class="info-card-header">
-                        <div class="language-mark">
-                            <img src="images/css.png" alt="CSS Logo">
-                        </div>
-                        <div class="info-header-text">
-                            <h4 class="info-title">CSS</h4>
-                            <span class="info-subtitle">Visual styling</span>
-                        </div>
-                        <span class="info-badge info-badge--growing"><i class="fa-solid fa-leaf"
-                                style="font-size:9px;"></i> Growing</span>
-                    </div>
-                    <p class="info-desc">Used for spacing, polish, layout control, and making the page feel far less
-                        flat.</p>
-                    <div class="info-tags">
-                        <span>Layout</span>
-                        <span>Motion</span>
-                        <span>Visual Polish</span>
-                    </div>
-                </div>
-            </div>
+            <a class="home-tile home-tile--accent-green" href="quick-info.html">
+                <span class="home-tile-icon"><i class="fa-solid fa-circle-info"></i></span>
+                <span class="home-tile-tag">About me</span>
+                <h2>Quick Info</h2>
+                <p>Where I am, what I work on, and the contact links that matter most.</p>
+                <span class="home-tile-action">Read more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
         </section>
+    </main>
 
-        <hr>
+    <footer class="home-shell home-footer">
+        <span>someonehere.me</span>
+        <span>Built while learning the web.</span>
+    </footer>
 
-        <section class="py-1 tools-section">
-            <h2 class="titleh2" id="helpful"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h2>
-            <div class="info-grid info-grid--tools">
-                <div class="info-card tool-card tool-card--rojo">
-                    <div class="info-card-header">
-                        <div class="tool-mark">
-                            <img src="images/rojo.png" alt="Rojo Logo">
-                        </div>
-                        <div class="info-header-text">
-                            <h4 class="info-title">Rojo</h4>
-                            <span class="info-subtitle">Roblox project workflow</span>
-                        </div>
-                        <span class="info-badge">Preferred</span>
-                    </div>
-                    <p class="info-desc">My main bridge between Roblox and VS Code <strong>for large projects</strong>,
-                        keeping projects organised and easy
-                        to manage.</p>
-                    <div class="tool-flow">
-                        <span>VS Code</span>
-                        <span>Sync</span>
-                        <span>Studio</span>
-                    </div>
-                </div>
-
-                <div class="info-card tool-card tool-card--git">
-                    <div class="info-card-header">
-                        <div class="tool-mark">
-                            <img src="images/git.png" alt="Git Logo">
-                        </div>
-                        <div class="info-header-text">
-                            <h4 class="info-title">Git</h4>
-                            <span class="info-subtitle">Version control</span>
-                        </div>
-                        <span class="info-badge">Essential</span>
-                    </div>
-                    <p class="info-desc">Used for keeping version history clean, safer collaboration, and protecting
-                        against bad changes.</p>
-                    <div class="tool-flow">
-                        <span>Commits</span>
-                        <span>Branches</span>
-                        <span>Rollback</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <br><br><br><br>
-    </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
